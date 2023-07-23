@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="input-container">
+            <input type="text" id="todoInput" placeholder=" Your Task ...">
+            <button id="setReminderBtn">Set Reminder</button>
+            <select id="categoryDropdown">
+                <option value="">Select a Category</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="health">Health</option>
+                <option value="exercise">Exercise</option>
+                <option value="shopping">Shopping</option>
+                <option value="others">Others</option>
+            </select>
+            <input type="datetime-local" id="dueDateInput">
+            <select id="priorityDropdown">
+                <option value="">Select Priority</option>
+                <option value="very low">Very Low</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="very high"> Very High</option>
+            </select>
+            <input type="text" id="tagsInput" placeholder="Tags">
+            <button id="addTodoBtn">Add</button>
+        </div>
+        <div class="filter-container">
+            <label for="dueDateFilter">Due Date:</label>
+            <input type="date" id="dueDateFilter">
+            <label for="categoryFilter">Category:</label>
+            <select id="categoryFilter">
+                <option value="">All</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="health">Health</option>
+                <option value="exercise">Exercise</option>
+                <option value="shopping">Shopping</option>
+                <option value="others">Others</option>
+            </select>
+            <label for="priorityFilter">Priority:</label>
+            <select id="priorityFilter">
+                <option value="">All</option>
+                <option value="very low">Very Low</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="very high"> Very High</option>
+            </select>
+            <button id="applyFiltersBtn">Apply Filters</button>
+            <button id="removeFiltersBtn">Remove Filters</button>
+        </div>
+    
+
+<div class="filter-container">
+    
+</div>
+
+        <!-- <div class="sorting-container">
+            <label for="sortCriteria">Sort By:</label>
+            <select id="sortCriteria">
+                <option value="">None</option>
+                <option value="dueDateAsc">Priority_Decreasing</option>
+                <option value="dueDateDesc">Due Date_Decreasing</option>
+                <option value="priorityAsc">Priority_Increasing</option>
+                <option value="priorityDesc">Due Date_Increasing </option>
+            </select>
+        </div> -->
+        <ul id="todoList"></ul>
+        <button class="clearLocalStorage" onclick="clearLocalStorage()">Clear All Todos</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

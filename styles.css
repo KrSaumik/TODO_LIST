@@ -1,0 +1,296 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+
+/* Add styles to the container */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #909530, #31b99a);
+}
+
+.container   h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #051672;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* Add styles to the input container */
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Add styles to the input text*/
+#todoInput {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: black;
+    border: none;
+}
+
+
+#tagsInput {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: black;
+    border: none;
+}
+
+/* Add styles to the buttons */
+.button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+
+/* Add styles to the date and reminder buttons */
+#dueDateInput,
+#setReminderBtn {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+
+}
+
+/* Add styles to the filters and sorting containers 
+.filter-container,
+.sorting-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}*/
+
+/* Add styles to the filter labels */
+.filter-container label,
+.sorting-container label {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* Add styles to the filter inputs and selects */
+.filter-container input,
+.filter-container select,
+.sorting-container select {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Add styles to the todo list */
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+/* Add styles to the todo items */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 6px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add styles to the priority labels */
+.priority-label {
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/* Add styles to the done todo items */
+.todo-item.done {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+    text-decoration: line-through;
+}
+
+/* Add styles to the empty message */
+.empty-message {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+/* Add styles to the search input and button */
+#searchInput {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Add styles to the add task button */
+
+#addTodoBtn {
+    color: #051672 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding:7px;
+    border: 3px solid #051672 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+#addTodoBtn:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+    }
+
+/* Add styles to the reminder button*/
+
+
+#setReminderBtn {
+    color: #051672 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding:7px;
+    border: 3px solid #051672 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+#setReminderBtn:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+    }
+
+#categoryDropdown {
+
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    border: none;
+  
+}
+
+#priorityDropdown {
+
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    border: none;
+  
+}
+
+/* Add styles to the apply filters and clear filters buttons */
+
+
+#applyFiltersBtn, #removeFiltersBtn {
+    color: #051672 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding:7px;
+    border: 3px solid #051672 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+
+#applyFiltersBtn:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+    }
+
+    #removeFiltersBtn:hover {
+        color: #494949 !important;
+        border-radius: 50px;
+        border-color: #494949 !important;
+        transition: all 0.3s ease 0s;
+        }
+    
+
+
+/* Styling for drag and drop */
+.todo-list li {
+    cursor: grab;
+}
+
+.todo-list li:active {
+    cursor: grabbing;
+}
+
+.drag-over {
+    border: 2px dashed #555;
+    background-color: #f0f0f0;
+}
+
+
+/* Add styles to the sort button */
+#sortTodoBtn {
+    background-color: #17a2b8;
+}
+
+
+/* Add styles to the search and clear search buttons */
+#searchBtn, #clearSearchBtn {
+    background-color: #343a40;
+}
+
+/* Add styles to clearAll Todos*/
+.clearLocalStorage {
+    color: #051672 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding:7px;
+    border: 3px solid #051672 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
+.clearLocalStorage:hover {
+    color: #494949 !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+    }
+
+/* Responsive styles */
+@media (max-width: 500px) {
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-container button,
+    .filter-container button,
+    .sorting-container button {
+        margin-top: 5px;
+    }
+}
